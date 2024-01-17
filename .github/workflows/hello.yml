@@ -1,15 +1,15 @@
 name: say_hello
 
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Run hello.yml
-                run: |
-                    echo "hello world"
+    steps:
+      - name: Run hello.yml
+        run: |
+        echo "hello world"
