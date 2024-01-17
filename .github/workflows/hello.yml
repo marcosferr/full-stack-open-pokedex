@@ -6,10 +6,22 @@ on:
       - main
 
 jobs:
-  build:
+  hello_world_job:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Say Hello
+        run: |
+          echo "Hello world"
+
+      - name: Print Date
+        run: |
+          echo "Now it is: $(date)"
+
+      - name: Print Directory Content
+        run: |
+          ls -al
+
       - name: Run hello.yml
         run: |
-        echo "hello world"
+          echo "hello world"
